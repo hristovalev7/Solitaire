@@ -14,7 +14,7 @@ Initially there will be 1 card in the first pile, 2 cards in the second pile, 3 
 You can move cards to another pile by following these rules:
 1. The card you are trying to move needs to be **exactly** 1 rank lower **and** of different color than the card you are moving it onto.
 2. If the destination pile is empty, only a King can be put there (There are no limitations regarding the color and the suit of the King in this case).
-3. You can also move *subpiles*[^1] if the top card of the subpile can be moved according to the rules described above.
+3. You can also move *subpiles*[^1] if the card at the bottom of the subpile can be moved according to the rules described above.
 
 Keep in mind that only **face-up** cards can be moved!
 
