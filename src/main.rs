@@ -8,7 +8,7 @@ use std::{env, path};
 use std::io;
 use ggez::conf::{Conf, WindowMode};
 use ggez::event::{EventHandler, MouseButton};
-use ggez::graphics::Color;
+use ggez::graphics::{Color, Sampler};
 use rand::prelude::*;
 
 use crate::assets::Assets;
@@ -311,6 +311,10 @@ impl EventHandler for State {
 
     fn draw(&mut self, ctx: &mut Context) -> GameResult<()> {
         let mut canvas = graphics::Canvas::from_frame(ctx, Color::from_rgb(0, 128, 0));
+
+        //Fixes blurry sprites
+        let sampler = Sampler::nearest_clamp();
+        canvas.set_sampler(sampler);
 
         self.deck.drawPile(&mut canvas);
         self.discard.drawPile(&mut canvas);

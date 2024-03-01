@@ -18,12 +18,9 @@ You can move cards to another pile by following these rules:
 
 Keep in mind that only **face-up** cards can be moved!
 
-## Goal
+## The goal of the game
 The goal is to move all cards to the four *final* piles.
 Note that each *final* pile corresponds to a specific suit and that cards need to be arranged in ascending order[^2].
-
-## Compiling
-Make sure that you are using cargo 1.66.0 when compiling!
 
 [^1]: A subpile is any contiguous part of an *ordinary* pile with more than 1 element
 [^2]: Ascending order of cards: A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
