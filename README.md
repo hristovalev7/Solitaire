@@ -4,6 +4,9 @@ A simple Solitaire game built using the [ggez](https://github.com/ggez/ggez) Rus
 # Gameplay demo
 ![SolitaireDemo](https://user-images.githubusercontent.com/51285393/224511856-577ce0d9-a93c-4a33-a034-75a31a14f81a.gif)
 
+# Coming soon
+A graphical replacement for the difficulty selector at the start of the game which currently waits the user to type "easy" or "hard" in the console.
+
 # How to play
 ## Description
 Solitaire is played with a standard deck of 52 cards.
