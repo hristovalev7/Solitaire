@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
 
 use ggez::{graphics, Context, GameResult};
-
+#[derive(Clone)]
 pub struct Assets {
     pub aceHeart: graphics::Image,
     pub twoHeart: graphics::Image,

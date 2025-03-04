@@ -97,16 +97,15 @@ impl State {
             difficulty,
         };
 
-        state.newDeck(ctx);
+        state.newDeck();
         state.dealCards();
 
         Ok(state)
     }
 
     /// Generates a new deck with 52 cards and then shuffles it
-    fn newDeck(&mut self, ctx: &mut Context) {
+    fn newDeck(&mut self) {
         let mut deck: Vec<Card> = Vec::new();
-
         for suit in vec![Suit::Heart, Suit::Diamond, Suit::Club, Suit::Spade] {
             for rank in vec![
                 Rank::Ace,
@@ -123,7 +122,7 @@ impl State {
                 Rank::Queen,
                 Rank::King,
             ] {
-                let card: Card = Card::new(ctx, suit.clone(), rank.clone());
+                let card: Card = Card::new(suit.clone(), rank.clone(), self.assets.clone());
                 deck.push(card);
             }
         }
